@@ -1,0 +1,33 @@
+{% extends "crud/index.html" %}
+{% block title %}채팅 목록{% endblock %}
+{% block content %}
+
+<h3>&nbsp;&nbsp;&nbsp;채팅</h3>
+
+<br>
+<div class = 'img'>
+    <div class="b" ></div>
+    <p onclick="goToLink()"> 채팅방 이름 <br><br>채팅 미리보기 어쩌구 저쩌구</p>
+</div>
+
+<div class = 'img' >
+    <div class="b"></div>
+    <p onclick="goToLink()"> 채팅방 이름 <br><br>채팅 미리보기 어쩌구 저쩌구</p>
+</div>
+
+<div class = 'img'>
+    <div class="b"></div>
+    <p onclick="goToLink()"> 채팅방 이름 <br><br>채팅 미리보기 어쩌구 저쩌구</p>
+</div>
+<div class = 'img'>
+    <div class="b" ></div>
+    <p onclick="goToLink()"> 채팅방 이름 <br><br>채팅 미리보기 어쩌구 저쩌구</p>
+</div>
+
+<script>
+    function goToLink() {
+        window.location.href = "{{ url_for('crud.chat')}}";
+    }
+</script>
+
+{% endblock %}

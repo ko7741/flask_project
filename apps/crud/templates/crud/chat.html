@@ -1,0 +1,27 @@
+{% extends "crud/index.html" %}
+{% block title %}채팅방{% endblock %}
+{% block content %}
+
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 강건마 <br>2</p>
+</div>
+
+
+<div class="chatting_area">
+
+    {% for chat in chatting%}
+
+        <li class="chat"> {{chat[0]}} </li>
+
+    {% endfor %}
+</div>
+
+<div>
+    <form action=""
+    method="POST" 
+    novalidate="novalidate">
+    <button class="submit" type="submit" >전송</button>
+    </form>
+</div>
+{% endblock %}

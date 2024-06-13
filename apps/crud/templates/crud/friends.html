@@ -1,0 +1,36 @@
+{% extends "crud/index.html" %}
+{% block title %}친구 목록{% endblock %}
+{% block content %}
+
+<h3> &nbsp;&nbsp;&nbsp;친구 </h3>
+<div style="display: flex; align-items: center">
+    <img src="{{ url_for('crud.static' , filename='lena.jpg')}}" width="100" height="100" >
+    <p> 레나<br>커피 한잔</p>
+</div>
+<hr>
+
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 친구 <br>친구 상태 메시지</p>
+</div>
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 친구 <br>친구 상태 메시지</p>
+</div>
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 친구 <br>친구 상태 메시지</p>
+</div>
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 친구 <br>친구 상태 메시지</p>
+</div>
+<div class = 'img'>
+    <div class="b"></div>
+    <p> 친구 <br>친구 상태 메시지</p>
+</div>
+
+
+
+
+{% endblock %}
